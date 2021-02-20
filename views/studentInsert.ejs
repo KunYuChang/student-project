@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增獎學金</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>請填寫獎學金資訊</h1>
+    <form action="/students/insert" method="POST">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" required>
+        <br>
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="age">年齡:</label>
+        <input type="number" id="age" name="age">
+        <br>
+        <label for="merit">優秀獎學金:</label>
+        <input type="number" id="merit" name="merit">
+        <br>
+        <label for="other">其他學獎金:</label>
+        <input type="number" id="other" name="other">
+        <br>
+        <button>送出資料</button>
+    </form>
+</body>
+</html>

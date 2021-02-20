@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>獎學金個人頁面</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>獎學金個人頁面</h1>
+    <table>
+        <tr>
+            <td>學生ID</td>
+            <td><%= data.id  %> </td>
+        </tr>
+        <tr>
+            <td>學生姓名</td>
+            <td><%= data.name  %> </td>
+        </tr>
+        <tr>
+            <td>學生年齡</td>
+            <td><%= data.age  %> </td>
+        </tr>
+        <tr>
+            <td>獎學金</td>
+            <td><%= data.schlarship.merit  %> </td>
+        </tr>
+        <tr>
+            <td>其他學金</td>
+            <td><%= data.schlarship.other  %> </td>
+        </tr>
+        <tr>
+            <td>總獎金</td>
+            <td><%= data.schlarship.merit+ data.schlarship.other%></td>
+        </tr>        
+    </table>    
+    <a href="/students/">回到學生總頁</a>
+</body>
+</html>

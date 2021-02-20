@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #424242;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body h1 {
+  margin: 2rem 0 1rem 0;
+}
+
+body a {
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+body a:hover {
+  background-color: #fff;
+  border: 1px solid #424242;
+  color: #424242;
+}
+
+body form {
+  font-size: 1.25rem;
+}
+
+body form label,
+body form input {
+  margin: 0.25rem;
+}
+
+body form input[type=number]::-webkit-inner-spin-button,
+body form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body form input,
+body form button {
+  width: 7rem;
+  height: 2rem;
+  background-color: #424242;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.1rem;
+}
+
+body form button {
+  cursor: pointer;
+}
+
+body table,
+body tr,
+body td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+}
+
+body td {
+  padding: 0.5rem;
+}
+
+body table {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+body ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+body ul .students-list {
+  margin: 0.5rem 0.25rem;
+}
+
+body ul .students-list a {
+  background-color: #424242;
+  border: 1px solid #424242;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.25rem;
+  text-align: center;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

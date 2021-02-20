@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #424242;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin: 2rem 0 1rem 0;
+    }
+
+    a {
+        border: 1px solid #fff;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        color: #fff;
+        padding: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #fff;
+            border: 1px solid #424242;
+            color: #424242;
+        }
+    }
+
+    form {
+        font-size: 1.25rem;
+
+        label,
+        input {
+            margin: 0.25rem;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        input,
+        button {
+            width: 7rem;
+            height: 2rem;
+            background-color: #424242;
+            border: 1px solid #fff;
+            border-radius: 0.5rem;
+            color: #fff;
+            font-size: 1.25rem;
+            padding: 0.1rem;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    }
+
+    table,
+    tr,
+    td {
+        border: 1px solid #fff;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 0.5rem;
+    }
+
+    table {
+        font-size: 1.25rem; 
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+        .students-list {
+            margin: 0.5rem 0.25rem;
+
+            a {
+                background-color: #424242;
+                border: 1px solid #424242;
+                font-weight: bold;
+                color: #fff;
+                padding: 0.25rem;
+                text-align: center;
+                text-decoration:underline;
+            }
+        }
+    }
+}

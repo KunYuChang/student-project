@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更新獎學金資訊</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>更新獎學金資訊</h1>
+    <form action="/students/edit/<%= data.id %>?_method=PUT" method="POST">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" value="<%= data.id %>" required>
+        <br>
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" value="<%= data.name %>" required>
+        <br>
+        <label for="age">年齡:</label>
+        <input type="number" id="age" name="age" value="<%= data.age %>">
+        <br>
+        <label for="merit">優秀獎學金:</label>
+        <input type="number" id="merit" name="merit" value="<%= data.schlarship.merit %>">
+        <br>
+        <label for="other">其他獎學金:</label>
+        <input type="number" id="other" name="other" value="<%= data.schlarship.other %>">
+        <br>
+        <button>送出資料</button>
+    </form>        
+</body>
+</html>
